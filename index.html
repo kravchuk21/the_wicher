@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -71,14 +72,55 @@
           </div>
           <!-- /.content -->
           <button class="play">
-              <img src="img/play.svg" alt="play" class="play-img">
+            <img src="img/play.svg" alt="play" class="play-img" />
           </button>
           <!-- /.play -->
         </div>
         <!-- /.main-content -->
+        <div class="series">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card series-1">
+                  <span class="card-subtitle">Серия #1</span>
+                  <h2 class="card-title">Начало конца</h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card series-2">
+                  <span class="card-subtitle">Серия #2</span>
+                  <h2 class="card-title">Четыре знака</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="arrow"></button>
+        </div>
       </div>
       <!-- /.container -->
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="left">
+            <span class="copyright"
+              >© 2020 The Witcher. All right reserved.</span
+            >
+          </div>
+          <!-- /.left -->
+          <div class="right">
+            <nav class="footer-menu">
+              <a href="#" class="footer-link">Privacy Policy</a>
+              <a href="#" class="footer-link">Terms of Service</a>
+              <a href="#" class="footer-link">Legal</a>
+            </nav>
+          </div>
+          <!-- /.right -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </footer>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
