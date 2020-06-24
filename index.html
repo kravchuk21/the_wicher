@@ -10,6 +10,8 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -44,8 +46,8 @@
       <div class="container">
         <div class="main-content">
           <div class="content">
-            <span class="genre">2019, фэнтези</span>
-            <div class="rating">
+            <span class="genre animated fadeInRight">2019, фэнтези</span>
+            <div class="rating animated fadeInRight">
               <div class="rating-stars">
                 <img src="img/star.svg" alt="star" class="star" />
                 <img src="img/star.svg" alt="star" class="star" />
@@ -61,20 +63,29 @@
               </div>
               <div class="rating-number">7/10</div>
             </div>
-            <h1 class="main-title">Ведьмак</h1>
-            <p class="main-description">
+            <h1 class="main-title animated fadeInRight">Ведьмак</h1>
+            <p class="main-description animated fadeInRight">
               Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади
               по кличке Плотва путешествует по Континенту. За тугой мешочек
               чеканных монет этот мужчина избавит вас от всякой настырной
               нечисти — хоть от чудищ болотных, оборотней и даже заколдованных
               принцесс.
             </p>
-            <button class="button">Смотреть онлайн</button>
+            <a
+              data-fancybox
+              href="https://www.youtube.com/watch?v=P0oJqfLzZzQ"
+              class="button animated fadeInRight"
+              >Смотреть трейлер</a
+            >
           </div>
           <!-- /.content -->
-          <button class="play">
+          <a
+            data-fancybox
+            href="https://www.youtube.com/watch?v=P0oJqfLzZzQ"
+            class="play"
+          >
             <img src="img/play.svg" alt="play" class="play-img" />
-          </button>
+          </a>
           <!-- /.play -->
         </div>
         <!-- /.main-content -->
@@ -115,24 +126,18 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <div class="left">
-            <span class="copyright"
-              >© 2020 The Witcher. All right reserved.</span
-            >
-          </div>
-          <!-- /.left -->
-          <div class="right">
-            <nav class="footer-menu">
-              <a href="#" class="footer-link">Privacy Policy</a>
-              <a href="#" class="footer-link">Terms of Service</a>
-              <a href="#" class="footer-link">Legal</a>
-            </nav>
-          </div>
-          <!-- /.right -->
+          <span class="copyright">© 2020 The Witcher. All right reserved.</span>
+          <nav class="footer-menu">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">Legal</a>
+          </nav>
         </div>
       </div>
       <!-- /.container -->
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
   </body>
