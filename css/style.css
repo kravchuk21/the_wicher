@@ -23,6 +23,7 @@ body {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-position: top right 20%;
+  overflow-x: hidden;
 }
 .container {
   width: 95%;
