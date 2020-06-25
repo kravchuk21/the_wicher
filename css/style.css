@@ -23,7 +23,6 @@ body {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-position: top right 20%;
-  overflow-x: hidden;
 }
 .container {
   width: 95%;
@@ -108,6 +107,8 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 85px;
+  width: 100%;
+  overflow: hidden;
 }
 .play {
   display: flex;
@@ -237,7 +238,6 @@ body {
 .menu-button {
   display: none;
 }
-
 /* Responsive */
 @media (max-width: 760px) {
   .play {
@@ -266,6 +266,7 @@ body {
     background-color: #ffffff;
     border: none;
     cursor: pointer;
+    z-index: 3;
   }
   .menu-button::before {
     content: "";
@@ -323,6 +324,7 @@ body {
     background-color: #9d2929;
     width: 250px;
     padding-bottom: 40px;
+    z-index: 2;
   }
   .header-active {
     display: flex;
